@@ -7,8 +7,7 @@ if (!has('nvim') && !has('clipboard_working'))
     # copy text to clipboard on both (y)ank and (d)elete
     var VimOSCYankOperators = ['y', 'd']
     def VimOSCYankPostCallback(event: dict<any>): void
-        if index(VimOSCYankPostRegisters, event.regname) != -1
-                    \ && index(VimOSCYankOperators, event.operator) != -1
+        if index(VimOSCYankPostRegisters, event.regname) != -1 && index(VimOSCYankOperators, event.operator) != -1
             g:OSCYankRegister(event.regname)
         endif
     enddef
