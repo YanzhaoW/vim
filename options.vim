@@ -35,6 +35,8 @@ g:gruvbox_transparent_bg = 1
 g:gruvbox_contrast_dark = "hard"
 #g:gruvbox_sign_column = "bg"
 
+set background=dark
+
 colorscheme gruvbox
 
 hi Normal guibg=NONE ctermbg=NONE
