@@ -10,6 +10,7 @@ set cursorline
 set ignorecase
 set termguicolors
 set hlsearch
+set visualbell t_vb=
 
 set tabstop=4
 set shiftwidth=4
